@@ -14,7 +14,7 @@ public class GameSurfaceView extends GLSurfaceView {
         super(context);
 
         setEGLContextClientVersion(OPENGL_ES_VERSION);
-        setRenderer(new GameRenderer());
+        setRenderer(new GameRenderer(context));
         setRenderMode(RENDERMODE_CONTINUOUSLY);
     }
 }
